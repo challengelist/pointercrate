@@ -1,0 +1,27 @@
+# For documentation on how to configure this file,
+# see diesel.rs/guides/configuring-diesel-cli
+
+[print_schema]
+file = "src/schema.rs"
+filter = { except_tables = [
+    "creator_additions",
+    "creator_deletions",
+    "demon_additions",
+    "demon_modifications",
+    "player_additions",
+    "player_modifications",
+    "player_deletions",
+    "record_additions",
+    "record_modifications",
+    "record_deletions",
+    "record_notes_additions",
+    "record_notes_modifications",
+    "record_notes_deletions",
+    "submitter_additions",
+    "submitter_modifications",
+    "submitter_deletions",
+    "user_additions",
+    "user_modifications",
+    "user_deletions",
+    "download_lock",
+] }
